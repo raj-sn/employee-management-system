@@ -78,6 +78,19 @@ PostgreSQL Container
 Docker Volume
 ```
 
+## CI Pipeline
+
+```text
+Developer
+    ↓
+Git Push
+    ↓
+GitHub Actions
+    ↓
+Docker Build
+    ↓
+Success / Failure
+```
 
 
 ## Author
