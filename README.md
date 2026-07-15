@@ -1,98 +1,213 @@
 # Employee Management System
 
-A simple Employee Management System built using:
+A full-stack Employee Management System built using Flask and PostgreSQL, containerized with Docker and deployed automatically to AWS using GitHub Actions CI/CD.
 
-- Flask
-- PostgreSQL
-- Docker
-- Docker Compose
+---
+
+## Project Overview
+
+This project demonstrates modern DevOps practices by combining application development, containerization, cloud deployment, and deployment automation.
+
+The application allows users to manage employee records through a web interface while utilizing a PostgreSQL database for persistent storage.
+
+---
 
 ## Features
 
-- Add Employee
+- Add Employees
 - View Employees
-- Delete Employee
-- PostgreSQL Database
+- Delete Employees
+- PostgreSQL Database Integration
 - Dockerized Application
+- Multi-Container Architecture
+- AWS Cloud Deployment
+- Automated CI/CD Pipeline using GitHub Actions
 
-## Technology Stack
-
-- Python
-- Flask
-- PostgreSQL
-- Docker
-- Docker Compose
-- Git
-- GitHub
-
-## Project Structure
-
-```text
-employee-management-system
-│
-├── app.py
-├── db.py
-├── Dockerfile
-├── docker-compose.yml
-├── requirements.txt
-├── templates
-│   └── index.html
-└── README.md
-```
-
-## Run Locally
-
-```bash
-docker compose up --build
-```
-
-Open:
-
-```text
-http://localhost:5000
-```
-
-## Database
-
-```text
-PostgreSQL
-```
-
-Database Name:
-
-```text
-employee_db
-```
+---
 
 ## Architecture
 
-```text
-Browser
-   ↓
-Flask Container
-   ↓
-Docker Network
-   ↓
-PostgreSQL Container
-   ↓
-Docker Volume
-```
+![Architecture](Diagram/project-architecture.png)
 
-## CI Pipeline
+Flow
 
 ```text
 Developer
     ↓
 Git Push
     ↓
+GitHub Repository
+    ↓
 GitHub Actions
     ↓
-Docker Build
+AWS EC2
     ↓
-Success / Failure
+Docker Compose
+   /          \
+Flask      PostgreSQL
 ```
 
+---
+
+## Technology Stack
+
+### Backend
+
+- Python
+- Flask
+
+### Database
+
+- PostgreSQL
+
+### Containerization
+
+- Docker
+- Docker Compose
+
+### CI/CD
+
+- GitHub Actions
+
+### Cloud
+
+- AWS EC2
+
+### Version Control
+
+- Git
+- GitHub
+
+---
+
+## Screenshots
+
+### Application
+
+Screenshots/application-home.png
+
+### Docker Containers
+
+Screenshots/docker-containers.png
+
+### GitHub Actions Pipeline
+
+Screenshots/github-actions-deploy.png
+
+### AWS Deployment
+
+Screenshots/ec2-instance.png
+
+---
+
+## CI/CD Pipeline
+
+```text
+Code Change
+      ↓
+Git Commit
+      ↓
+Git Push
+      ↓
+GitHub Actions
+      ↓
+Deploy to AWS EC2
+      ↓
+Docker Compose Rebuild
+      ↓
+Application Updated
+```
+
+---
+
+## Local Setup
+
+### Clone Repository
+
+```bash
+git clone https://github.com/your-username/employee-management-system.git
+cd employee-management-system
+```
+
+### Start Application
+
+```bash
+docker compose up -d --build
+```
+
+### Open Browser
+
+```text
+http://localhost:5000
+```
+
+---
+
+## Project Structure
+
+```text
+employee-management-system
+│
+├── .github/
+│   └── workflows/
+│
+├── Screenshots/
+│
+├── Documentation/
+│   ├── Architecture.md
+│   ├── CICD.md
+│   ├── Troubleshooting.md
+│   ├── Learning-Journey.md
+│   └── Cost-Analysis.md
+│
+├── templates/
+├── static/
+├── Dockerfile
+├── docker-compose.yml
+├── app.py
+├── db.py
+├── requirements.txt
+└── README.md
+```
+
+---
+
+## Documentation
+
+- Documentation/Architecture.md
+- [CI/CD Pipeline](Documentation/Cshooting Guide](Documentation/Troubles-Journey.md
+- [Cost Analysisysis.md
+
+---
+
+## Skills Demonstrated
+
+- Flask Development
+- PostgreSQL Database Management
+- Docker & Docker Compose
+- Git & GitHub
+- GitHub Actions CI/CD
+- AWS EC2 Deployment
+- Linux Administration
+- SSH-based Deployment
+- Troubleshooting & Debugging
+
+---
+
+## Future Improvements
+
+- Nginx Reverse Proxy
+- HTTPS with Let's Encrypt
+- Docker Hub Integration
+- Amazon ECR
+- Amazon ECS
+- Terraform
+- Kubernetes
+
+---
 
 ## Author
 
-Raj S.N.
+**Raj S.N.**
+
+DevOps & Cloud Engineering Enthusiast
