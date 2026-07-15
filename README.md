@@ -175,8 +175,10 @@ employee-management-system
 ## Documentation
 
 - Documentation/Architecture.md
-- [CI/CD Pipeline](Documentation/Cshooting Guide](Documentation/Troubles-Journey.md
-- [Cost Analysisysis.md
+- Documentation/CICD.md
+- Documentation/Troubleshooting.md
+- Documentation/Learning-Journey.md
+- Documentation/Cost-Analysisysis.md
 
 ---
 
