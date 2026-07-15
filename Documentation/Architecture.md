@@ -6,7 +6,7 @@ The Employee Management System is a containerized web application built using Fl
 
 ## Architecture Diagram
 
-![Architecture](Diagram/project-architecture.png)
+![Architecture](Diagram/project-architecture.jpg)
 
 ## Components
 

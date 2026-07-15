@@ -27,7 +27,7 @@ The application allows users to manage employee records through a web interface 
 
 ## Architecture
 
-![Architecture](Diagram/project-architecture.png)
+![Architecture](Diagram/project-architecture.jpg)
 
 Flow
 
